@@ -1,0 +1,9 @@
+torch
+torchvision
+transformers
+scikit-learn
+pandas
+numpy
+Pillow
+beautifulsoup4
+tqdm

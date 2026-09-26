@@ -1,0 +1,50 @@
+Epoch 1/5
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.3095  |  LR: 1.81e-05
+✅ Best model saved!
+
+Epoch 2/5
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.1020  |  LR: 1.31e-05
+✅ Best model saved!
+
+Epoch 3/5
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0451  |  LR: 6.91e-06
+✅ Best model saved!
+
+Epoch 4/5
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0247  |  LR: 1.91e-06
+✅ Best model saved!
+
+Epoch 5/5
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0130  |  LR: 0.00e+00
+✅ Best model saved!
+
+--- Evaluation on held-out TEST set ---
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Benign (0)       0.97      0.96      0.97       418
+Phishing (1)       0.97      0.98      0.98       582
+
+    accuracy                           0.97      1000
+   macro avg       0.97      0.97      0.97      1000
+weighted avg       0.97      0.97      0.97      1000
+
+Confusion Matrix:
+                 Predicted Benign   Predicted Phishing
+  Actual Benign       401                17        
+  Actual Phishing     11                 571       
+
+Security-Relevant Rates:
+  False Negative Rate (FNR): 0.0189  ← phishing missed (lower is critical)
+  False Positive Rate (FPR): 0.0407  ← benign flagged as phishing

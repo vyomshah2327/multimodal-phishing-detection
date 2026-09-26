@@ -1,0 +1,68 @@
+Epoch 1/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.3880  |  LR: 1.00e-04
+✅ Best model saved!
+
+Epoch 2/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.1712  |  LR: 1.00e-04
+✅ Best model saved!
+
+Epoch 3/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0908  |  LR: 5.00e-05
+✅ Best model saved!
+
+Epoch 4/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0421  |  LR: 5.00e-05
+✅ Best model saved!
+
+Epoch 5/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0246  |  LR: 5.00e-05
+✅ Best model saved!
+
+Epoch 6/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0228  |  LR: 2.50e-05
+✅ Best model saved!
+
+Epoch 7/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0188  |  LR: 2.50e-05
+✅ Best model saved!
+
+Epoch 8/8
+/usr/local/lib/python3.12/dist-packages/PIL/Image.py:3452: DecompressionBombWarning: Image size (100241178 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Train Loss: 0.0101  |  LR: 2.50e-05
+✅ Best model saved!
+
+--- Evaluation on held-out TEST set ---
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Benign (0)       0.92      0.94      0.93       418
+Phishing (1)       0.95      0.94      0.95       582
+
+    accuracy                           0.94      1000
+   macro avg       0.94      0.94      0.94      1000
+weighted avg       0.94      0.94      0.94      1000
+
+Confusion Matrix:
+                 Predicted Benign   Predicted Phishing
+  Actual Benign       392                26        
+  Actual Phishing     34                 548       
+
+Security-Relevant Rates:
+  False Negative Rate (FNR): 0.0584  ← phishing missed (lower is critical)
+  False Positive Rate (FPR): 0.0622  ← benign flagged as phishing

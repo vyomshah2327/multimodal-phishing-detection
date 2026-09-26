@@ -1,0 +1,40 @@
+Epoch 1/5
+Train Loss: 0.2484  |  LR: 1.81e-05
+✅ Best model saved!
+
+Epoch 2/5
+Train Loss: 0.0930  |  LR: 1.31e-05
+✅ Best model saved!
+
+Epoch 3/5
+Train Loss: 0.0470  |  LR: 6.91e-06
+✅ Best model saved!
+
+Epoch 4/5
+Train Loss: 0.0192  |  LR: 1.91e-06
+✅ Best model saved!
+
+Epoch 5/5
+Train Loss: 0.0105  |  LR: 0.00e+00
+✅ Best model saved!
+
+--- Evaluation on held-out TEST set ---
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Benign (0)       0.98      0.96      0.97       418
+Phishing (1)       0.97      0.98      0.98       582
+
+    accuracy                           0.97      1000
+   macro avg       0.98      0.97      0.97      1000
+weighted avg       0.98      0.97      0.97      1000
+
+Confusion Matrix:
+                 Predicted Benign   Predicted Phishing
+  Actual Benign       402                16        
+  Actual Phishing     9                  573       
+
+Security-Relevant Rates:
+  False Negative Rate (FNR): 0.0155  ← phishing missed (lower is critical)
+  False Positive Rate (FPR): 0.0383  ← benign flagged as phishing
